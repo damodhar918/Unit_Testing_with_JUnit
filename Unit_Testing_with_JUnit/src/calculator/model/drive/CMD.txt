@@ -1,0 +1,14 @@
+D:\JJFSD\java\Unit Testing with JUnit\src\calculator\model\drive>javac Passenger.java
+
+D:\JJFSD\java\Unit Testing with JUnit\src\calculator\model\drive>javac Driver.java
+
+D:\JJFSD\java\Unit Testing with JUnit\src\calculator\model\drive>javac DriversManager.java
+
+D:\JJFSD\java\Unit Testing with JUnit\src\calculator\model\drive>javac -cp .;junit-4.13.2.jar;hamcrest-core-1.3.jar  DriversManagerTest.java
+
+D:\JJFSD\java\Unit Testing with JUnit\src\calculator\model\drive>java -cp .;junit-4.13.2.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore DriversManagerTest
+JUnit version 4.13.2
+...
+Time: 0.025
+
+OK (3 tests)
