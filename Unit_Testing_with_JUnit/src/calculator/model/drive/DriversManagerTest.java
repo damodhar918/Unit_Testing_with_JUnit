@@ -23,7 +23,19 @@ public class DriversManagerTest
         driversManager.addDriver( new Driver( "Pedro", "12312440", 12f ) );
         driversManager.addDriver( new Driver( "Constanza", "9824990", 11f ) );
     }
+@Test
+    public void verifyDriverAddedCorrectly(){
+		Assert.assertEquals(driversManager.getDriver("1234990").getName(), "Emilio");
+		Assert.assertEquals(driversManager.getDriver("12312440").getName(), "Pedro");
+		Assert.assertEquals(driversManager.getDriver("9824990").getName(), "Constanza");
+    }
 
+    @Test
+    public void verifyPassengerAddedCorrectly(){
+		Assert.assertEquals(driversManager.getPassenger("44234").getName(), "Carlos");
+		Assert.assertEquals(driversManager.getPassenger("533434").getName(), "Elise");
+		Assert.assertEquals(driversManager.getPassenger("5343433").getName(), "Ian");
+    }
     @Test
     public void startTripTest(){
 	// DriversManager d= new DriversManager();
